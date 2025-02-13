@@ -1,0 +1,23 @@
+/* Customize Nav Bar */
+.md-header {
+  background-color: #1e293b !important; /* Dark navy */
+}
+
+/* Code Blocks */
+.md-typeset pre {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Tabs Styling */
+.md-tabs__link {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Sidebar Auto-Scrolling */
+.md-sidebar {
+  overflow-y: auto;
+}
