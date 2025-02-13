@@ -4,3 +4,7 @@ theme:
     - navigation.tabs
     - navigation.instant
     - toc.integrate  # Enables scroll-based index
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 2
