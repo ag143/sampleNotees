@@ -15,3 +15,5 @@ theme:
     - content.code.copy  # Copy button for code
     - content.tooltips  # Hover tooltips for links
     - content.tabs  # Enables tabbed interface
+  extra_css:
+    - styles/custom.css
