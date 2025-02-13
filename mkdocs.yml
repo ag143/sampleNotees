@@ -1,10 +1,17 @@
 theme:
   name: material
+  palette:
+    - scheme: default  # Light mode
+      primary: blue
+      accent: indigo
+    - scheme: slate  # Dark mode
+      primary: deep-purple
+      accent: pink
   features:
     - navigation.tabs
     - navigation.instant
-    - toc.integrate  # Enables scroll-based index
-markdown_extensions:
-  - toc:
-      permalink: true
-      toc_depth: 2
+    - navigation.tracking
+    - toc.integrate
+    - content.code.copy  # Copy button for code
+    - content.tooltips  # Hover tooltips for links
+    - content.tabs  # Enables tabbed interface
