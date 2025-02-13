@@ -1,5 +1,17 @@
+site_name: DevOps Notes
+site_url: https://your-username.github.io/devops-notes/
+repo_url: https://github.com/your-username/devops-notes
+edit_uri: ""
+
 theme:
   name: material
+  features:
+    - navigation.tabs  # Tabs for tools
+    - navigation.instant  # Faster page loading
+    - navigation.tracking  # Auto-scroll sidebar
+    - toc.integrate  # Integrate sidebar with page content
+    - content.code.copy  # Copy button for code
+    - content.tabs  # Enable tabbed content
   palette:
     - scheme: default  # Light mode
       primary: blue
@@ -7,13 +19,18 @@ theme:
     - scheme: slate  # Dark mode
       primary: deep-purple
       accent: pink
-  features:
-    - navigation.tabs
-    - navigation.instant
-    - navigation.tracking
-    - toc.integrate
-    - content.code.copy  # Copy button for code
-    - content.tooltips  # Hover tooltips for links
-    - content.tabs  # Enables tabbed interface
-  extra_css:
-    - styles/custom.css
+
+plugins:
+  - search
+  - mermaid2  # Enables Mermaid.js for diagrams
+
+markdown_extensions:
+  - pymdownx.details  # Collapsible sections
+  - pymdownx.superfences  # Better code blocks
+  - pymdownx.tabbed  # Tabs inside content
+  - toc:
+      permalink: true
+      toc_depth: 2
+
+extra_css:
+  - styles/custom.css
