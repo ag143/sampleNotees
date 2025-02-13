@@ -1,14 +1,16 @@
 # DevOps Notes
 
-=== "Terraform"
+=== ":cloud: Terraform"
     ## Terraform Basics
-    - Infrastructure as Code (IaC)
-    - Providers, Modules, State Management
+    - 🏗️ **Infrastructure as Code (IaC)**
+    - 📦 **Modules & State Management**
 
-=== "Kubernetes"
+=== ":whale: Kubernetes"
     ## Kubernetes Concepts
-    - Pods, Deployments, Services, Helm
+    - 🛠️ **Pods, Deployments, Services**
+    - 🎭 **Helm & Operators**
 
-=== "CI/CD"
+=== ":gear: CI/CD"
     ## Continuous Integration
-    - GitHub Actions, Jenkins, ArgoCD
+    - 🚀 **GitHub Actions, Jenkins**
+    - 🔄 **ArgoCD, Spinnaker**
