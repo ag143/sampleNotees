@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.min.js"></script>
+</head>
+<body>
+
+    <h1>DevOps Notes 🛠️</h1>
+    
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'terraform')">Terraform</button>
+        <button class="tablink" onclick="openTab(event, 'kubernetes')">Kubernetes</button>
+        <button class="tablink" onclick="openTab(event, 'cicd')">CI/CD</button>
+    </div>
+
+    <div id="terraform" class="tabcontent">
+        <h2>Terraform</h2>
+        <button class="collapsible">Click to Expand - Terraform Basics</button>
+        <div class="content">
+            <ul>
+                <li>🏗 **Infrastructure as Code (IaC)**</li>
+                <li>📦 **Modules, State Management**</li>
+            </ul>
+            <pre><code class="language-hcl">
+resource "aws_instance" "web" {
+  ami           = "ami-123456"
+  instance_type = "t2.micro"
+}
+            </code></pre>
+        </div>
+    </div>
+
+    <div id="kubernetes" class="tabcontent">
+        <h2>Kubernetes</h2>
+        <button class="collapsible">Click to Expand - Kubernetes Essentials</button>
+        <div class="content">
+            <ul>
+                <li>🚀 **Pods, Deployments, Services**</li>
+                <li>🎭 **Helm & Operators**</li>
+            </ul>
+            <pre><code class="language-yaml">
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-container
+          image: nginx
+            </code></pre>
+        </div>
+    </div>
+
+    <div id="cicd" class="tabcontent">
+        <h2>CI/CD</h2>
+        <button class="collapsible">Click to Expand - CI/CD Pipelines</button>
+        <div class="content">
+            <ul>
+                <li>✅ **GitHub Actions, Jenkins, GitLab CI**</li>
+                <li>🔄 **ArgoCD, Spinnaker**</li>
+            </ul>
+            <pre><code class="language-yaml">
+name: CI Pipeline
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Run Tests
+        run: echo "Running tests..."
+            </code></pre>
+        </div>
+    </div>
+
+    <h2>📊 Infrastructure Diagram</h2>
+    <div class="mermaid">
+        graph TD;
+        Dev[Developer] --> |Commits Code| CI[CI/CD Pipeline]
+        CI --> |Build & Test| Artifact[Artifact Repository]
+        Artifact --> |Deploys to| K8s[Kubernetes Cluster]
+        K8s --> |Monitored by| Prometheus[Monitoring System]
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
