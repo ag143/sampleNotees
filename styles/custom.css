@@ -1,9 +1,22 @@
-/* Customize Nav Bar */
+/* 🎨 Custom Header Background */
 .md-header {
   background-color: #1e293b !important; /* Dark navy */
 }
 
-/* Code Blocks */
+/* 🌙 Dark Mode Enhancements */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #bb86fc;
+  --md-accent-fg-color: #ff79c6;
+}
+
+/* 📜 Smooth Scrolling Sidebar */
+.md-sidebar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #1a202c;
+}
+
+/* 🔲 Improve Code Block Appearance */
 .md-typeset pre {
   background-color: #2d2d2d;
   color: #ffffff;
@@ -11,13 +24,14 @@
   padding: 10px;
 }
 
-/* Tabs Styling */
+/* 📌 Style Navigation Tabs */
 .md-tabs__link {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-/* Sidebar Auto-Scrolling */
-.md-sidebar {
-  overflow-y: auto;
+/* 🔄 Hover Effects for Better UX */
+.md-typeset a:hover {
+  text-decoration: underline;
+  color: #ff6b6b;
 }
